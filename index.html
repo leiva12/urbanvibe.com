@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <body>
+        <img src="adri.png.jpg" alt="adri.png.jpg">
+    </body>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Ropa</title>
+    <title>Página con Imágenes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,59 +14,36 @@
             padding: 0;
             text-align: center;
         }
-        header {
-            background: #333;
+        .header {
+            background: url('https://source.unsplash.com/1600x400/?nature') no-repeat center/cover;
             color: white;
-            padding: 15px;
+            padding: 50px;
             font-size: 24px;
         }
-        .productos {
+        .gallery {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            margin: 20px;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
         }
-        .producto {
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin: 10px;
-            width: 200px;
-            text-align: center;
-        }
-        .producto img {
-            width: 100%;
-            height: auto;
-        }
-        .boton-comprar {
-            background: #28a745;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
+        .gallery img { 
+            width: 600px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
-    <header>Tienda de Ropa</header>
-    <section class="productos">
-        <div class="producto">
-            <img src="https://via.placeholder.com/200" alt="Producto 1">
-            <h3>Camiseta Negra</h3>
-            <p>$20.00</p>
-            <button class="boton-comprar">Comprar</button>
-        </div>
-        <div class="producto">
-            <img src="https://via.placeholder.com/200" alt="Producto 2">
-            <h3>Pantalón Vaquero</h3>
-            <p>$35.00</p>
-            <button class="boton-comprar">Comprar</button>
-        </div>
-        <div class="producto">
-            <img src="https://via.placeholder.com/200" alt="Producto 3">
-            <h3>Chaqueta Casual</h3>
-            <p>$50.00</p>
-            <button class="boton-comprar">Comprar</button>
-        </div>
-    </section>
+    <div class="header">Bienvenido a mi página con imágenes</div>
+    
+    <h2>Galería de imágenes</h2>
+    <div class="gallery">
+        <img src="https://source.unsplash.com/300x200/?landscape" alt="Paisaje">
+        <img src="https://source.unsplash.com/300x200/?city" alt="Ciudad">
+        <img src="https://source.unsplash.com/300x200/?ocean" alt="Océano">
+        <img src="https://source.unsplash.com/300x200/?forest" alt="Bosque">
+    </div>
 </body>
 </html>
